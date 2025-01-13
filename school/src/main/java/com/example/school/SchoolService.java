@@ -1,4 +1,5 @@
 package com.example.school;
+import jakarta.ws.rs.NotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -14,5 +15,11 @@ public class SchoolService {
 
     public List<School> findAll() {
         return schoolRepository.findAll();
+    }
+
+    public FullSchoolResponse findSchoolsWithStudents(Integer schoolId) {
+         var school = schoolRepository.findById(schoolId).orElseThrow(() -> new NotFoundException("School not found"));
+         var students = null;
+         return;
     }
 }

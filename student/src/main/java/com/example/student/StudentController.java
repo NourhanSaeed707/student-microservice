@@ -21,4 +21,10 @@ public class StudentController {
     public List<Student> findAll() {
         return studentService.findAll();
     }
+
+    @GetMapping("/school/{schoolId}")
+    @ResponseStatus(HttpStatus.OK)
+    public List<Student> findAllStudentsBySchool(@PathVariable("schoolId") Integer schoolId) {
+        return studentService.findAllStudentsBySchool(schoolId);
+    }
 }
