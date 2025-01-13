@@ -17,7 +17,7 @@ public class StudentController {
     }
 
     @GetMapping("/")
-    @ResponseStatus(HttpStatus.ACCEPTED)
+    @ResponseStatus(HttpStatus.OK)
     public List<Student> findAll() {
         return studentService.findAll();
     }
