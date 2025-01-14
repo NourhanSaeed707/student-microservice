@@ -47,4 +47,21 @@ Verify the configurations are stored in the config-repo directory or a Git-based
 
 5. Start the Project with Docker Compose
 Run the entire system using Docker Compose:
-- **docker-compose up --build**  
+- **docker-compose up --build**
+
+6. Verify Services
+Once all containers are running, verify that the services are accessible:
+- **Eureka Dashboard: http://localhost:8761**
+- **Config Server: http://localhost:8888**
+- **API Gateway: http://localhost:8080**
+- **Zipkin UI: http://localhost:9411**
+
+7. Interact with APIs
+Use tools like Postman or cURL to interact with the microservices through the API Gateway.
+For example:
+- **GET http://localhost:8080/api/students** 
+- **POST http://localhost:8080/api/schools**
+
+8. Stop the Project
+To stop all running containers, use:
+- **docker-compose down** 
