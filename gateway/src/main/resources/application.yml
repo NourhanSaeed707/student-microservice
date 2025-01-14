@@ -1,7 +1,6 @@
 eureka:
   client:
     register-with-eureka: false
-    fetch-registry: false
 spring:
   application:
     name: gateway
@@ -9,9 +8,6 @@ spring:
     import: optional:configserver:http://localhost:8888
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: false
       routes:
         - id: students
           uri: http://localhost:8090
@@ -21,5 +17,8 @@ spring:
           uri: http://localhost:8070
           predicates:
             - Path=/api/v1/schools/**
+      discovery:
+        locator:
+          enabled: true
 server:
   port: 8222
