@@ -19,9 +19,12 @@ spring:
       ddl-auto: create
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-server:
-  port: 8070
 
 application:
   config:
     students-url: http://localhost:8090/api/v1/students
+
+server:
+  port: 8070
+
+
