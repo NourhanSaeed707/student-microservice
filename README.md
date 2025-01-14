@@ -13,3 +13,13 @@ This repository demonstrates a microservices-based architecture for managing stu
 - API Gateway: Implements a gateway layer using Spring Cloud Gateway to route requests, handle load balancing, and provide security.
 - Distributed Tracing: Integrated with Zipkin for detailed tracking of requests across services, helping diagnose issues and analyze performance.
 - Containerized Deployment: Uses Docker Compose for seamless deployment and orchestration of all microservices.
+- Data Persistence: Implements persistent storage with databases tailored for student and school services.
+- RESTful APIs: Clean and well-documented APIs for seamless interaction with services.
+
+## Technologies:
+Provide a list of frameworks, libraries, and tools used in the project, such as:
+- Spring Boot
+- Spring Cloud (Eureka, Config Server, Gateway)
+- Zipkin
+- Docker Compose
+- PostgreSQL 
