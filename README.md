@@ -34,13 +34,13 @@ Ensure the following tools are installed on your system:
 - Git (for cloning the repository)
 2. Clone the Repository
 Clone this repository to your local machine using Git:
-- https://github.com/NourhanSaeed707/student-microservice.git
+- **https://github.com/NourhanSaeed707/student-microservice.git**
 3. Build the Project
 Use Maven to build the project and package all microservices:
-- mvn clean install
+- **mvn clean install**
 4. Set Up Configuration
 Make sure the Config Server is correctly set up with configuration files for each microservice.
 Verify the configurations are stored in the config-repo directory or a Git-based configuration repository.
 5. Start the Project with Docker Compose
 Run the entire system using Docker Compose:
-- docker-compose up --build  
+- **docker-compose up --build**  
